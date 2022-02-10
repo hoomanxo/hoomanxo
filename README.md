@@ -10,7 +10,7 @@
    
    
    
-<img src= "https://komarev.com/ghpvc/?username=hoomanxo&style=flat-square&color=blue alt=""/>
+<img src= "https://komarev.com/ghpvc/?username=hoomanxo&style=flat-square&color=blue" alt=""/>
                                                                                                        
 <h1>
 Hi there!
