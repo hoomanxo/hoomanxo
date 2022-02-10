@@ -26,10 +26,10 @@ Hi there!
 ### :man_technologist: About Me
 I am a Computer Programmer<img src="https://media.giphy.com/media/WUlplcMpOCEmTGBtBW/giphy.gif" width="30"> from Canada.
 
-- :telescope: I have earned a Diploma in Computer Programming from Ryerson University, a diploma in Computer Networking from CDI college.
-- :seedling: and currently studying to complete a B.Sc degree in Computer Science.
+- :telescope: I have earned a Diploma in Computer Programming from Ryerson University, a diploma in Computer Networking from CDI college and currently studying to complete a B.Sc degree in Computer Science.
+- :seedling: I enjoy programming in Java, Visual Studio, Python and coding in HTML and CSS.
 
-- :zap: I enjoy programming in Java, Visual Studio, Python and coding in HTML and CSS.
+- :zap: My hobbies include photography and maintaning / repairing computers for family and friends.
 
 - :mailbox:How to reach me: [![Linkedin Badge](https://img.shields.io/badge/-kakbar-blue?style=flat&logo=Linkedin&logoColor=white)](https://ca.linkedin.com/in/hoomanvahdat)
 ---
