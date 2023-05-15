@@ -27,8 +27,8 @@ Hello People of the World!
 ### :man_technologist: About Me
 I am a Computer Programmer<img src="https://media.giphy.com/media/WUlplcMpOCEmTGBtBW/giphy.gif" width="30"> from Canada.
 
-- :telescope: I have earned a Diploma in Computer Programming from Ryerson University, a diploma in Computer Networking from CDI college and currently studying to complete a B.Sc degree in Computer Science.
-- :seedling: I enjoy programming in Java, Visual Studio, SQL, Python, CSS and HTML.
+- :telescope: I have earned a Diploma in Computer Programming from Ryerson University, a diploma in Computer Networking from CDI college and currently studying to complete a B.Sc degree in Computer Science from University of the People.
+- :seedling: I enjoy programming in C, Java, Visual Studio, SQL, Python, CSS and HTML.
 
 - :zap: My hobbies include photography and maintaning / repairing computers for family and friends.
 
