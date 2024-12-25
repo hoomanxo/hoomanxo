@@ -26,7 +26,7 @@ Welcome
 
 
 ### :man_technologist: About Me
-I am a Software Engineer<img src="https://media.giphy.com/media/WUlplcMpOCEmTGBtBW/giphy.gif" width="30"> from Canada.
+This is Hooman, a Software Engineer in Toronto, Canada.<img src="https://media.giphy.com/media/WUlplcMpOCEmTGBtBW/giphy.gif" width="30"> from Canada.
 
 - :telescope: I have earned a Diploma in Computer Coding from Toronto Metropolitan University (Ryerson) University, a diploma in Computer Networking from CDI college and currently studying to complete a B.Sc degree in Computer Science from University of the People.
 - :seedling: I enjoy programming in C, Java, Visual Studio, SQL, Python, CSS and HTML.
