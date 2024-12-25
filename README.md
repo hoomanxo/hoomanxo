@@ -6,6 +6,7 @@
   <a href="https://ca.linkedin.com/in/hoomanvahdat">
     <img src="https://img.shields.io/badge/LinkedIn----blue?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn Badge"/>
 </a>
+   <br>
    <a href="http://hoomanv.ca">My Portfolio </a>
    
    </div>
