@@ -28,8 +28,8 @@ Welcome
 ### :man_technologist: About Me
 This is Hooman, a Software Engineer in Toronto, Canada.<img src="https://media.giphy.com/media/WUlplcMpOCEmTGBtBW/giphy.gif" width="30"> 
 
-- :telescope: I have earned a Diploma in Computer Coding from Toronto Metropolitan University (Ryerson) University, a diploma in Computer Networking from CDI college and currently studying to complete a B.Sc degree in Computer Science from University of the People.
-- :seedling: I enjoy programming in C, Java, Visual Studio, SQL, Python, CSS and HTML.
+- :telescope: I have earned a Certificate in Computer Programming Applications from Toronto Metropolitan University (Ryerson) and a Diploma in Computer Networking from CDI college. Currently, I am studying to complete a B.Sc degree in Computer Science from University of the People.
+- :seedling: I enjoy programming in Java, Visual Studio, SQL, Python and CSS/HTML.
 
 - :zap: My hobbies include photography and maintaning / repairing computers for family and friends.
 
