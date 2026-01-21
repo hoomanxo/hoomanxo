@@ -7,7 +7,7 @@
     <img src="https://img.shields.io/badge/LinkedIn----blue?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn Badge"/>
 </a>
    <br>
-   <a href="http://hoomanv.ca">My Portfolio </a>
+   <a href="https://hoomanonline.com/portfolio-2/">My Portfolio </a>
    
    </div>
   <div id= "rest" align="center">
