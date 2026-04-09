@@ -1,54 +1,251 @@
-<div id="header" align="center">
-   <img src="https://media.giphy.com/media/klTeWcjw5ruOQ/giphy.gif" width="100"/>
-  
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Hooman's | Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    :root {
+      --primary: #6c63ff;
+      --secondary: #ff6584;
+      --accent: #00c9a7;
+      --bg: linear-gradient(135deg, #667eea, #764ba2);
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: var(--bg);
+      color: #fff;
+      scroll-behavior: smooth;
+    }
+
+    header {
+      backdrop-filter: blur(10px);
+      background: rgba(0,0,0,0.3);
+      padding: 1rem;
+      position: sticky;
+      top: 0;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: var(--secondary);
+    }
+
+    section {
+      padding: 80px 20px;
+      max-width: 1000px;
+      margin: auto;
+      opacity: 0;
+      transform: translateY(40px);
+      transition: 0.8s ease;
+    }
+
+    section.show {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    h1, h2 {
+      text-align: center;
+    }
+
+    /* GLASS CARD */
+    .glass {
+      background: rgba(255,255,255,0.1);
+      backdrop-filter: blur(15px);
+      border-radius: 15px;
+      padding: 20px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    }
+
+    /* PROJECT GRID */
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+    }
+
+    .project-card {
+      position: relative;
+      border-radius: 15px;
+      overflow: hidden;
+      transition: 0.4s;
+    }
+
+    .project-card img {
+      width: 100%;
+      display: block;
+    }
+
+    .project-card:hover {
+      transform: translateY(-10px) scale(1.03);
+      box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+    }
+
+    .project-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(
+        135deg,
+        rgba(108,99,255,0.8),
+        rgba(255,101,132,0.8)
+      );
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      opacity: 0;
+      transition: 0.4s;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .project-card:hover .project-overlay {
+      opacity: 1;
+    }
+
+    .btn {
+      margin-top: 10px;
+      padding: 10px 20px;
+      border: none;
+      background: var(--accent);
+      color: #000;
+      border-radius: 25px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: #00f5d4;
+      transform: scale(1.1);
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      color: #ddd;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#resume">Resume</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section id="home" class="reveal">
+  <h1>Hooman's Page</h1>
+  <p style="text-align:center;">Software Developer / Data Analyst</p>
+</section>
+
+<section id="about" class="reveal">
+  <div class="glass">
+    <h2>About Me</h2>
+    <p>
+      I am a  Software Developer / Data Analyst in Toronto, Canada.
+      I build visually engaging web experiences using modern technologies and creative design.
+    </p>
   </div>
-<div id="badges" align= "center">
-  <a href="https://ca.linkedin.com/in/hoomanvahdat">
-    <img src="https://img.shields.io/badge/LinkedIn----blue?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn Badge"/>
-</a>
-   <br>
-   <a href="https://hoomanonline.com/portfolio-2/">My Portfolio </a>
-   
-   </div>
-  <div id= "rest" align="center">
-   
-   
-   
-<img src= "https://komarev.com/ghpvc/?username=hoomanxo&style=flat-square&color=blue" alt=""/>
-                                                                                                       
-<h1>
-Welcome  
-</h1>
-</div>
-<div align="center">
-  <img src="https://media.giphy.com/media/dWesBcTLavkZuG35MI/giphy.gif" width="600" height="300"/>
-</div>
+</section>
 
+<section id="projects" class="reveal">
+  <h2>Projects</h2>
 
-### :man_technologist: About Me
-This is Hooman, a Software Engineer in Toronto, Canada.<img src="https://media.giphy.com/media/WUlplcMpOCEmTGBtBW/giphy.gif" width="30"> 
+  <div class="projects">
 
-- :telescope: I have earned a Certificate in Computer Programming Applications from Toronto Metropolitan University (Ryerson) and a Diploma in Computer Networking from CDI college. Currently, I am studying to complete a B.Sc degree in Computer Science from University of the People.
-- :seedling: I enjoy programming in Java, Visual Studio, SQL, Python and CSS/HTML.
+    <div class="project-card">
+      <img src="project1.png">
+      <div class="project-overlay">
+        <h3>Olympic Race Simulator</h3>
+        <p>A stopwatch used to time an Olympic-style simulation, ranking participants based on their recorded time, using HTML/CSS and JavaScript.</p>
+        <button class="btn"><a href="https://github.com/hoomanv3xo/Olympic-Race-Simulator"</a>View</button>
+      </div>
+    </div>
 
-- :zap: My hobbies include photography and maintaning / repairing computers for family and friends.
+    <div class="project-card">
+      <img src="https://via.placeholder.com/400x250" />
+      <div class="project-overlay">
+        <h3>Project Two</h3>
+        <p>Modern responsive design</p>
+        <button class="btn">View</button>
+      </div>
+    </div>
 
-- :mailbox:How to reach me: [![Linkedin Badge](https://img.shields.io/badge/-kakbar-blue?style=flat&logo=Linkedin&logoColor=white)](https://ca.linkedin.com/in/hoomanvahdat)
----
-### :hammer_and_wrench: Languages and Tools :
+    <div class="project-card">
+      <img src="https://via.placeholder.com/400x250" />
+      <div class="project-overlay">
+        <h3>Project Three</h3>
+        <p>Interactive JS app</p>
+        <button class="btn">View</button>
+      </div>
+    </div>
 
-<div>
-  <img src="https://github.com/devicons/devicon/blob/master/icons/java/java-original-wordmark.svg" title="Java" alt="Java" width="40" height="40"/>&nbsp;
-  <img src="https://github.com/devicons/devicon/blob/master/icons/visualstudio/visualstudio-plain-wordmark.svg" title="visual studio" alt="visual studio" width="40" height="40"/>&nbsp;
-   <img src="https://github.com/devicons/devicon/blob/master/icons/mysql/mysql-plain-wordmark.svg" title="mysql" alt="mysql" width="40" height="40"/>&nbsp;
-   <img src="https://github.com/devicons/devicon/blob/master/icons/python/python-plain-wordmark.svg" title="python" alt="python" width="40" height="40"/>&nbsp;
-  <img src="https://github.com/devicons/devicon/blob/master/icons/css3/css3-plain-wordmark.svg"  title="CSS" alt="CSS" width="40" height="40"/>&nbsp;
-  <img src="https://github.com/devicons/devicon/blob/master/icons/html5/html5-original.svg" title="HTML5" alt="HTML5" width="40" height="40"/>&nbsp;
-  <img src="https://github.com/devicons/devicon/blob/master/icons/javascript/javascript-original.svg" title="JavaScript" alt="JavaScript" width="40" height="40"/>&nbsp;
+  </div>
+</section>
 
+<section id="resume" class="reveal">
+  <div class="glass">
+    <h2>Resume</h2>
+    <ul>
+      <li>Frontend Developer – Company</li>
+      <li>Computer Science Degree</li>
+    </ul>
+    <p style="text-align:center;">
+      <button class="btn">Download Resume</button>
+    </p>
+  </div>
+</section>
 
-### :fire: My Stats :
- [![GitHub Streak](http://github-readme-streak-stats.herokuapp.com?user=hoomanxo&date_format=M%20j%5B%2C%20Y%5D)](https://git.io/streak-stats)
-   
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=hoomanxo&layout=compact)](https://github.com/hoomanxo/github-readme-stats)
-   
+<section id="contact" class="reveal">
+  <div class="glass">
+    <h2>Contact</h2>
+    <p style="text-align:center;">your@email.com</p>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 Your Name</p>
+</footer>
+
+<script>
+  const reveals = document.querySelectorAll(".reveal");
+
+  function revealOnScroll() {
+    const windowHeight = window.innerHeight;
+
+    reveals.forEach(section => {
+      const sectionTop = section.getBoundingClientRect().top;
+
+      if (sectionTop < windowHeight - 100) {
+        section.classList.add("show");
+      }
+    });
+  }
+
+  window.addEventListener("scroll", revealOnScroll);
+  revealOnScroll();
+</script>
+
+</body>
+</html>
