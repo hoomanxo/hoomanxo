@@ -1,158 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Hooman's | Portfolio</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <style>
-    :root {
-      --primary: #6c63ff;
-      --secondary: #ff6584;
-      --accent: #00c9a7;
-      --bg: linear-gradient(135deg, #667eea, #764ba2);
-    }
-
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background: var(--bg);
-      color: #fff;
-      scroll-behavior: smooth;
-    }
-
-    header {
-      backdrop-filter: blur(10px);
-      background: rgba(0,0,0,0.3);
-      padding: 1rem;
-      position: sticky;
-      top: 0;
-    }
-
-    nav {
-      display: flex;
-      justify-content: center;
-      gap: 30px;
-    }
-
-    nav a {
-      color: #fff;
-      text-decoration: none;
-      font-weight: bold;
-      transition: 0.3s;
-    }
-
-    nav a:hover {
-      color: var(--secondary);
-    }
-
-    section {
-      padding: 80px 20px;
-      max-width: 1000px;
-      margin: auto;
-      opacity: 0;
-      transform: translateY(40px);
-      transition: 0.8s ease;
-    }
-
-    section.show {
-      opacity: 1;
-      transform: translateY(0);
-    }
-
-    h1, h2 {
-      text-align: center;
-    }
-
-    /* GLASS CARD */
-    .glass {
-      background: rgba(255,255,255,0.1);
-      backdrop-filter: blur(15px);
-      border-radius: 15px;
-      padding: 20px;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.2);
-    }
-
-    /* PROJECT GRID */
-    .projects {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 25px;
-    }
-
-    .project-card {
-      position: relative;
-      border-radius: 15px;
-      overflow: hidden;
-      transition: 0.4s;
-    }
-
-    .project-card img {
-      width: 100%;
-      display: block;
-    }
-
-    .project-card:hover {
-      transform: translateY(-10px) scale(1.03);
-      box-shadow: 0 20px 40px rgba(0,0,0,0.4);
-    }
-
-    .project-overlay {
-      position: absolute;
-      inset: 0;
-      background: linear-gradient(
-        135deg,
-        rgba(108,99,255,0.8),
-        rgba(255,101,132,0.8)
-      );
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      opacity: 0;
-      transition: 0.4s;
-      text-align: center;
-      padding: 20px;
-    }
-
-    .project-card:hover .project-overlay {
-      opacity: 1;
-    }
-
-    .btn {
-      margin-top: 10px;
-      padding: 10px 20px;
-      border: none;
-      background: var(--accent);
-      color: #000;
-      border-radius: 25px;
-      cursor: pointer;
-      font-weight: bold;
-      transition: 0.3s;
-    }
-
-    .btn:hover {
-      background: #00f5d4;
-      transform: scale(1.1);
-    }
-
-    footer {
-      text-align: center;
-      padding: 20px;
-      color: #ddd;
-    }
-  </style>
-</head>
 <body>
 
-<header>
-  <nav>
-    <a href="#about">About</a>
-    <a href="#projects">Projects</a>
-    <a href="#resume">Resume</a>
-    <a href="#contact">Contact</a>
-  </nav>
-</header>
+
 
 <section id="home" class="reveal">
   <h1>Hooman's Page</h1>
@@ -169,83 +17,17 @@
   </div>
 </section>
 
-<section id="projects" class="reveal">
-  <h2>Projects</h2>
 
-  <div class="projects">
 
-    <div class="project-card">
-      <img src="project1.png">
-      <div class="project-overlay">
-        <h3>Olympic Race Simulator</h3>
-        <p>A stopwatch used to time an Olympic-style simulation, ranking participants based on their recorded time, using HTML/CSS and JavaScript.</p>
-        <button class="btn"><a href="https://github.com/hoomanv3xo/Olympic-Race-Simulator"</a>View</button>
-      </div>
-    </div>
 
-    <div class="project-card">
-      <img src="https://via.placeholder.com/400x250" />
-      <div class="project-overlay">
-        <h3>Project Two</h3>
-        <p>Modern responsive design</p>
-        <button class="btn">View</button>
-      </div>
-    </div>
+  
 
-    <div class="project-card">
-      <img src="https://via.placeholder.com/400x250" />
-      <div class="project-overlay">
-        <h3>Project Three</h3>
-        <p>Interactive JS app</p>
-        <button class="btn">View</button>
-      </div>
-    </div>
 
-  </div>
-</section>
 
-<section id="resume" class="reveal">
-  <div class="glass">
-    <h2>Resume</h2>
-    <ul>
-      <li>Frontend Developer – Company</li>
-      <li>Computer Science Degree</li>
-    </ul>
-    <p style="text-align:center;">
-      <button class="btn">Download Resume</button>
-    </p>
-  </div>
-</section>
 
-<section id="contact" class="reveal">
-  <div class="glass">
-    <h2>Contact</h2>
-    <p style="text-align:center;">your@email.com</p>
-  </div>
-</section>
+    
 
-<footer>
-  <p>© 2026 Your Name</p>
-</footer>
+    
 
-<script>
-  const reveals = document.querySelectorAll(".reveal");
-
-  function revealOnScroll() {
-    const windowHeight = window.innerHeight;
-
-    reveals.forEach(section => {
-      const sectionTop = section.getBoundingClientRect().top;
-
-      if (sectionTop < windowHeight - 100) {
-        section.classList.add("show");
-      }
-    });
-  }
-
-  window.addEventListener("scroll", revealOnScroll);
-  revealOnScroll();
-</script>
-
-</body>
-</html>
+    
+      
